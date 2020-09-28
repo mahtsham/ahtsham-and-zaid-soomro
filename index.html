@@ -10,9 +10,45 @@
     <h1 id="title">Survey</h1>
     <p id="description">This is a survey</p>
     <form action="" id="survey-form">
-      <input type="text" id="name" required />
-      <input type="email" id="email" required />
-      <input type="number" id="number" required />
+      <label for="" id="name-label">Enter your name </label>
+      <input type="text" id="name" placeholder="eg: Smith" required />
+      <label for="email" id="email-label">Enter your email</label>
+      <input
+        type="email"
+        id="email"
+        placeholder="mahtsham@gmail.com"
+        required
+      />
+      <label for="number" id="number-label">Enter any number</label>
+      <input
+        type="number"
+        id="number"
+        placeholder="20"
+        min="2"
+        max="20"
+        required
+      />
+
+      <select name="dropdown" id="dropdown">
+        <option value="1" name="1">option 1</option>
+        <option value="2" name="2">option 2</option>
+      </select>
+
+      <input type="radio" name="gender" value="0" /> Male
+      <input type="radio" name="gender" value="1" /> Female
+
+      <br />
+      <input type="checkbox" value="1" /> one
+      <input type="checkbox" value="2" /> two
+      <input type="checkbox" value="3" /> three
+      <input type="checkbox" value="4" /> four
+      <input type="checkbox" value="5" /> five
+
+      <br />
+      Additional Comments
+
+      <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+      <input id="submit" type="submit" value="Submit" />
     </form>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
